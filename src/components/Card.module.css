@@ -107,7 +107,7 @@ button:nth-of-type(18) {
     font-size: 50%;
   }
   .card {
-    width: 50rem;
+    width: 60rem;
     height: auto;
     background-color: #fff;
     border-radius: 10px;
@@ -117,7 +117,7 @@ button:nth-of-type(18) {
 }
 @media only screen and (max-width: 720px) {
   html {
-    font-size: 40%;
+    font-size: 70%;
   }
   .card {
     width: 50rem;
@@ -133,7 +133,7 @@ button:nth-of-type(18) {
     font-size: 30%;
   }
   .card {
-    width: 50rem;
+    width: 90rem;
     height: auto;
     background-color: #fff;
     border-radius: 10px;
@@ -146,7 +146,7 @@ button:nth-of-type(18) {
     font-size: 20%;
   }
   .card {
-    width: 50rem;
+    width: 100rem;
     height: auto;
     background-color: #fff;
     border-radius: 10px;
