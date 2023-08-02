@@ -89,6 +89,12 @@ button:hover {
   color: #fff;
 }
 
+@media screen and (max-width: 1400px) {
+  .shadow {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   html {
     font-size: 50%;
