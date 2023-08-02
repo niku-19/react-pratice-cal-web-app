@@ -3,6 +3,20 @@ h1 {
   color: #d3d3d3;
 }
 
+.shadow {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0rem 10rem 1rem 1rem;
+  width: 53rem;
+  height: 125vh;
+  position: absolute;
+  top: 16%;
+  left: 74%;
+  translate: -50%;
+  rotate: 300deg;
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
 .conatiner {
   display: flex;
   flex-direction: column;
@@ -13,12 +27,12 @@ h1 {
 }
 
 .card {
-  width: 50rem;
+  width: 35rem;
   height: auto;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem 1rem;
+  background-color: #565855;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  padding: 3rem 2rem;
 }
 
 .CalResult {
@@ -28,22 +42,24 @@ h1 {
 }
 .CalResult input {
   width: 100%;
-  height: 15rem;
-  font-size: 7rem;
+  height: 6rem;
+  font-size: 5rem;
   text-align: right;
-  /* border: 1px solid #2e2e2e; */
-  border-radius: 0.5rem;
+  background-color: #bcd1c2;
+  border-radius: 1rem;
   border: none;
   outline: none;
-  background-color: #fff;
   color: #000;
+  padding: 1rem;
+  font-family: "Dancing Script", cursive;
+  font-family: "Electrolize", sans-serif;
 }
 .cal__buttons {
   width: 100%;
-  height: 55vh;
+  height: 40vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-gap: 1rem;
   padding: 1rem 1rem;
 }
@@ -54,52 +70,23 @@ button {
   border: none;
   outline: none;
   background-color: #fff;
-  border-radius: 0.5rem;
-  font-size: 3rem;
+  border-radius: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
   color: #000;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+button:nth-last-of-type(1) {
+  background-color: #faa14f;
+  color: #fff;
 }
 
 button:hover {
   background-color: #2e2e2e;
   color: #fff;
-}
-
-button:nth-of-type(3) {
-  grid-column: 3 / 5;
-  grid-row: 1 / 2;
-  color: red;
-  font-size: 5rem;
-}
-button:nth-of-type(7) {
-  grid-column: 1/2;
-}
-button:nth-of-type(10) {
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-button:nth-of-type(13) {
-  grid-column: 2/3;
-  grid-row: 5/6;
-}
-button:nth-of-type(14) {
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
-button:nth-of-type(15) {
-  grid-column: 4/5;
-  grid-row: 3/4;
-}
-button:nth-of-type(16) {
-  grid-column: 1/2;
-  grid-row: 5/6;
-}
-button:nth-of-type(18) {
-  grid-column: 4/5;
-  grid-row: 4/6;
-  color: red;
-  font-size: 7rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -109,10 +96,10 @@ button:nth-of-type(18) {
   .card {
     width: 60rem;
     height: auto;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: #565855;
+    border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem 1rem;
+    padding: 3rem 2rem;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -122,10 +109,10 @@ button:nth-of-type(18) {
   .card {
     width: 50rem;
     height: auto;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: #565855;
+    border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem 1rem;
+    padding: 3rem 2rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -135,9 +122,29 @@ button:nth-of-type(18) {
   .card {
     width: 90rem;
     height: auto;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: #565855;
+    border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+  }
+  .CalResult input {
+    width: 100%;
+    height: 12rem;
+    font-size: 5rem;
+    text-align: right;
+    background-color: #bcd1c2;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    color: #000;
+  }
+  .cal__buttons {
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2.5rem;
     padding: 1rem 1rem;
   }
 }
@@ -148,9 +155,29 @@ button:nth-of-type(18) {
   .card {
     width: 100rem;
     height: auto;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: #565855;
+    border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+  }
+  .CalResult input {
+    width: 100%;
+    height: 12rem;
+    font-size: 5rem;
+    text-align: right;
+    background-color: #bcd1c2;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    color: #000;
+  }
+  .cal__buttons {
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 3.5rem;
     padding: 1rem 1rem;
   }
 }
